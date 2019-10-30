@@ -1,7 +1,5 @@
 """Deep learning program that ids clothes."""
 import tensorflow as tf
-import numpy as np
-
 
 def ClothingID():
     """Machine learning function."""
