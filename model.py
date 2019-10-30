@@ -1,7 +1,10 @@
-"""Deep learning program that ids clothes"""
+"""Deep learning program that ids clothes."""
 import tensorflow as tf
 import numpy as np
+
+
 def ClothingID():
+    """Machine learning function."""
     mnist = tf.keras.datasets.fashion_mnist
     (training_images, training_labels), (test_images, test_labels) = mnist.load_data()
     training_images = training_images.reshape(60000, 28, 28, 1)
@@ -21,5 +24,3 @@ def ClothingID():
     model.fit(training_images, training_labels, epochs=5)
     predictions = model.predict(test_images)
     return predictions
-predictions = ClothingID()
-print(predictions[2])
