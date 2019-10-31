@@ -24,6 +24,4 @@ def main():
         print("The image is of a Bag")
     else:
         print("The image is of a Ankle Boot")
-
-newmethod528()
 main()
